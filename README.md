@@ -63,6 +63,14 @@ A companion receiver that verifies webhook authenticity before accepting and per
 
 The source repositories are currently private. Both projects are early-stage engineering studies; retry policies, broader replay controls, secret rotation, and production operations remain roadmap work.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-12w-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/activity-12w-light.svg">
+  <img src="./assets/activity-12w-light.svg" width="100%" alt="Figure 2: a static 12-week activity bitmap from 19 July to 10 October 2026, with five dithered density levels and the most recent complete week marked in signal red">
+</picture>
+
+*Figure 2 — Activity, 19 Jul to 10 Oct 2026. Dated snapshot; not a live graph.*
+
 ---
 
 ## 03 / TOOLKIT

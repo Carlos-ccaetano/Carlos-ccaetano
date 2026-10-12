@@ -1,89 +1,56 @@
-<p align="center">
-  <img src="./assets/profile-banner.jpg" width="100%" alt="Abstract network of events converging on a protected service" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
+  <img src="./assets/hero-light.svg" width="100%" alt="Editorial profile header for Carlos Caetano, Software Engineer in Belo Horizonte, focused on backend systems, distributed systems, and application security">
+</picture>
 
-<h1 align="center">Carlos Caetano</h1>
+## 01 / ABOUT
 
-<p align="center">
-  <strong>Backend engineering · distributed systems · application security</strong>
-</p>
+I'm a software engineer at **ATTRUS**, with professional experience in payments and backend development. I primarily work with **Elixir, Phoenix, and PostgreSQL**, building services where reliable processing and clear failure handling matter.
 
-<p align="center">
-  Building reliable services for the places where asynchronous work, external integrations, and security boundaries meet.
-</p>
-
-<p align="center">
-  <a href="https://github.com/Carlos-ccaetano">GitHub</a> ·
-  <a href="https://www.linkedin.com/in/carlos-caetano">LinkedIn</a>
-</p>
+My technical interests center on distributed systems reliability, backend architecture, secure API design, and applied AI for cybersecurity.
 
 ---
 
-## About
+## 02 / SELECTED WORK
 
-I work in software engineering at **ATTRUS**, contributing to backend systems in a financial-technology environment. My focus is Elixir/Phoenix services, asynchronous processing, and APIs designed around explicit failure and security boundaries.
+### Tidewake
 
-I'm completing a bachelor's degree in Computer Science at **Faculdade Dom Helder Câmara**. Outside work, I build focused projects that turn reliability and security concepts into code I can test, inspect, and improve.
+`WEBHOOK DELIVERY / ELIXIR / PHOENIX`
 
-## Featured engineering projects
+A webhook delivery service designed around durable ingestion and recoverable background work.
 
-### [Tidewake](https://github.com/Carlos-ccaetano/Tidewake)
+- Creates events, delivery records, and initial Oban jobs in one database transaction.
+- Signs exact payload bytes with HMAC-SHA256 and records each delivery attempt.
+- Recovers stale work and rejects unsafe resolved destinations before delivery.
 
-An early-stage webhook delivery service exploring durable ingestion and recoverable asynchronous processing.
+### Ironhold
 
-- Built with Elixir, Phoenix, Ecto, PostgreSQL, and Oban.
-- Creates the event, delivery records, and initial background jobs in one database transaction.
-- Tracks delivery attempts, signs exact payload bytes with HMAC-SHA256, recovers stale work, and emits Telemetry events.
-- Validates outbound targets and rejects unsafe resolved addresses before delivery.
+`WEBHOOK RECEIVER / ELIXIR / SECURITY`
 
-**Current boundary:** at-least-once recovery is implemented; automated retry/backoff policies and production operations remain roadmap work.
-
-### [Ironhold](https://github.com/Carlos-ccaetano/Ironhold)
-
-A companion receiver focused on authenticated webhook ingestion and conservative request handling.
+A companion receiver that verifies webhook authenticity before accepting and persisting an event.
 
 - Verifies HMAC-SHA256 signatures against the exact raw request body within a bounded timestamp window.
 - Checks event identity across headers and payload before accepting the request.
-- Persists accepted events under a unique event ID and returns explicit duplicate or validation responses.
-- Emits low-cardinality Telemetry signals for authentication and ingestion paths.
+- Stores accepted events under a unique event ID with explicit duplicate and validation responses.
 
-**Current boundary:** broader replay controls, secret rotation, rate limiting, and operational tooling remain roadmap work.
-
-Together, the repositories document and exercise this local flow:
-
-> **Event → Tidewake → signed webhook → Ironhold**
-
-They remain independent, early-stage services rather than a production deployment.
-
-## Toolkit
-
-- **Core backend:** Elixir · Erlang/OTP · Phoenix · Ecto · PostgreSQL · Oban
-- **Infrastructure and delivery:** Docker · RabbitMQ · Linux · GitHub Actions
-- **Additional experience:** TypeScript · React · Vue.js · AWS integrations, including Cognito
-
-## Engineering interests
-
-- Distributed systems reliability and recoverable asynchronous work
-- Secure API and integration-boundary design
-- Application security, threat modeling, and defensive review
-- AI-assisted security analysis and anomaly detection
-
-## Education and credentials
-
-**Bachelor's degree in Computer Science** — Faculdade Dom Helder Câmara
-
-- GitHub Actions (GH-200)
-- API Red Team Analyst (API-RTA)
-- Google Cybersecurity Professional Certificate
-- Ethical Hacker — IBSEC
-- Linux Security — IBSEC
-
-## Connect
-
-[GitHub](https://github.com/Carlos-ccaetano) · [LinkedIn](https://www.linkedin.com/in/carlos-caetano)
+The source repositories are currently private. Both projects are early-stage engineering studies; retry policies, broader replay controls, secret rotation, and production operations remain roadmap work.
 
 ---
 
-<p align="center">
-  <strong>Build reliable systems. Understand how they fail. Design them to fail safely.</strong>
-</p>
+## 03 / TOOLKIT
+
+`CORE`<br>
+Elixir / Erlang/OTP / Phoenix / PostgreSQL / Oban
+
+`SYSTEMS & DELIVERY`<br>
+Docker / RabbitMQ / GitHub Actions / Linux / AWS
+
+`PRODUCT DEVELOPMENT`<br>
+TypeScript / React / Vue
+
+---
+
+## 04 / CONTACT
+
+[GitHub](https://github.com/Carlos-ccaetano) / [LinkedIn](https://www.linkedin.com/in/carlos-caetano)

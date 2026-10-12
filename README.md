@@ -1,95 +1,44 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-manual-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-manual-light.svg">
-  <img src="./assets/hero-manual-light.svg" width="100%" alt="Systems reference manual header for Carlos Caetano, a Software Engineer in Belo Horizonte working across backend systems, distributed systems, payments, and application security">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.svg">
+  <img src="./assets/banner-light.svg" width="100%" alt="Carlos Caetano profile banner: backend, fintech, and application security">
 </picture>
 
 # Carlos Caetano
 
-**Software Engineer** · Belo Horizonte, Brazil<br>
-`BACKEND / DISTRIBUTED SYSTEMS / PAYMENTS / APPLICATION SECURITY`
+Backend developer working with Elixir at **ATTRUS**, in fintech
+and building toward application security.
 
----
-
-## 01 / ABOUT
-
-I'm a software engineer at **ATTRUS**, working across payments and backend development with **Elixir, Phoenix, and PostgreSQL**.
-
-My interests are distributed systems reliability, backend architecture, secure API design, and applied AI for cybersecurity. I prefer systems that make their failure modes visible.
-
----
-
-## 02 / SELECTED WORK
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-tidewake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/glyph-tidewake-light.svg">
-  <img src="./assets/glyph-tidewake-light.svg" width="48" alt="Tidewake glyph: durable event cells feeding outbound delivery lines">
-</picture>
-
-### Tidewake
-
-`WEBHOOK DELIVERY / ELIXIR / PHOENIX`
-
-A webhook delivery service designed around durable ingestion and recoverable background work.
-
-- Creates events, delivery records, and initial Oban jobs in one database transaction.
-- Signs exact payload bytes with HMAC-SHA256 and records each delivery attempt.
-- Recovers stale work and rejects unsafe resolved destinations before delivery.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-ironhold-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/glyph-ironhold-light.svg">
-  <img src="./assets/glyph-ironhold-light.svg" width="48" alt="Ironhold glyph: a closed pixel seal containing a verification mark">
-</picture>
-
-### Ironhold
-
-`WEBHOOK RECEIVER / ELIXIR / SECURITY`
-
-A companion receiver that verifies webhook authenticity before accepting and persisting an event.
-
-- Verifies HMAC-SHA256 signatures against the exact raw request body within a bounded timestamp window.
-- Checks event identity across headers and payload before accepting the request.
-- Stores accepted events under a unique event ID with explicit duplicate and validation responses.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/figure-delivery-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/figure-delivery-light.svg">
-  <img src="./assets/figure-delivery-light.svg" width="100%" alt="Figure 1: Tidewake signs and delivers a webhook; Ironhold verifies the signature and stores the accepted event">
-</picture>
-
-*Figure 1 — Tidewake signs and delivers the webhook; Ironhold verifies the signature and stores the accepted event.*
-
-The source repositories are currently private. Both projects are early-stage engineering studies; retry policies, broader replay controls, secret rotation, and production operations remain roadmap work.
-
----
-
-## 03 / TOOLKIT
+[![CI](https://img.shields.io/github/actions/workflow/status/Carlos-ccaetano/Carlos-ccaetano/ci.yml?branch=main&style=flat-square&label=ci&labelColor=1a1a1a&color=ffb000)](https://github.com/Carlos-ccaetano/Carlos-ccaetano/actions/workflows/ci.yml) [![MIT License](https://img.shields.io/badge/license-MIT-ffb000?style=flat-square&labelColor=1a1a1a)](./LICENSE)
 
 ```text
-CORE
-Elixir · Erlang/OTP · Phoenix
-PostgreSQL · Oban
+  CARLOS CAETANO
+  Backend developer (Elixir) @ ATTRUS
+  fintech · building toward AppSec
 
-SYSTEMS
-Docker · RabbitMQ · Linux
-GitHub Actions · AWS
+  $ whoami
+    I build backend systems with Elixir
+    at ATTRUS.
+    I work in fintech and build toward
+    AppSec.
 
-PRODUCT
-TypeScript · React · Vue
+  $ ls projects/
+    Tidewake/
+      durable, signed webhook delivery
+    Ironhold/
+      webhook verification and intake
+
+  $ cat stack.txt
+    elixir phoenix ecto postgresql
+    aws python java
+
+  $ contact
+    github.com/Carlos-ccaetano
 ```
 
----
+[Tidewake](https://github.com/Carlos-ccaetano/Tidewake) ·
+[Ironhold](https://github.com/Carlos-ccaetano/Ironhold)
 
-## 04 / CONTACT
+## License
 
-[GitHub](https://github.com/Carlos-ccaetano) · [LinkedIn](https://www.linkedin.com/in/carlos-caetano)
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/colophon-manual-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/colophon-manual-light.svg">
-  <img src="./assets/colophon-manual-light.svg" width="100%" alt="Colophon: local SVG, system fonts, twelve-column grid, and no external requests">
-</picture>
-
-*Colophon — Local SVG, system fonts, a twelve-column grid, and no external requests.*
+Released under the [MIT License](./LICENSE).

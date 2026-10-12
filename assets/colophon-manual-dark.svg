@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72" role="img" aria-labelledby="title desc">
-  <title id="title">Profile colophon</title>
-  <desc id="desc">Local SVG, system fonts, twelve-column grid, and no external requests.</desc>
-  <rect width="900" height="72" fill="#161614"/>
-  <rect x="24" y="14" width="852" height="1" fill="#A29E92"/>
-  <rect x="24" y="57" width="852" height="1" fill="#A29E92"/>
-  <text x="32" y="44" fill="#E9E5D8" font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="24" font-weight="700" letter-spacing=".4">COLOPHON / LOCAL SVG / SYSTEM TYPE / 12-COLUMN GRID</text>
-</svg>

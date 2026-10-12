@@ -13,24 +13,28 @@ and building toward application security.
 
 ```text
   CARLOS CAETANO
-  Backend developer (Elixir) @ ATTRUS
-  fintech · building toward AppSec
+  Backend developer
+  (Elixir) @ ATTRUS
+  fintech · building toward
+  AppSec
 
   $ whoami
-    I build backend systems with Elixir
-    at ATTRUS.
-    I work in fintech and build toward
-    AppSec.
+    I build backend systems
+    with Elixir at ATTRUS.
+    I work in fintech and build
+    toward AppSec.
 
   $ ls projects/
     Tidewake/
-      durable, signed webhook delivery
+      durable, signed webhook
+      delivery
     Ironhold/
-      webhook verification and intake
+      webhook verification
+      and intake
 
   $ cat stack.txt
-    elixir phoenix ecto postgresql
-    aws python java
+    elixir phoenix ecto
+    postgresql aws python java
 
   $ contact
     github.com/Carlos-ccaetano

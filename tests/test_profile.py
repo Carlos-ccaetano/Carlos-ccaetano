@@ -43,7 +43,7 @@ class ProfileRepositoryTests(unittest.TestCase):
         for reference in references:
             self.assertTrue((ROOT / reference[2:]).is_file())
 
-    def test_text_block_is_at_most_forty_columns(self) -> None:
+    def test_text_block_is_at_most_thirty_two_columns(self) -> None:
         inside_text_block = False
         found_text_block = False
         for line in README.read_text(encoding="utf-8").splitlines():
@@ -53,7 +53,7 @@ class ProfileRepositoryTests(unittest.TestCase):
             elif line == "```" and inside_text_block:
                 inside_text_block = False
             elif inside_text_block:
-                self.assertLessEqual(len(line), 40, line)
+                self.assertLessEqual(len(line), 32, line)
         self.assertTrue(found_text_block)
         self.assertFalse(inside_text_block)
 

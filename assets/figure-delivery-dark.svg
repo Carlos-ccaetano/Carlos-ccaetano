@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-labelledby="title desc">
+  <title id="title">Figure 1 — signed webhook delivery</title>
+  <desc id="desc">Tidewake signs exact payload bytes and delivers the webhook. Ironhold verifies the signature and stores the accepted event.</desc>
+  <rect width="900" height="220" fill="#161614"/>
+  <rect x="32" y="28" width="836" height="2" fill="#A29E92"/>
+  <rect x="32" y="190" width="836" height="2" fill="#A29E92"/>
+
+  <text x="32" y="62" fill="#A29E92" font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, monospace" font-size="16" font-weight="700" letter-spacing="1.2">FIGURE 01 / SIGNED DELIVERY</text>
+
+  <g fill="#E9E5D8" font-family="ui-monospace, SFMono-Regular, Consolas, Liberation Mono, monospace">
+    <text x="62" y="118" font-size="32" font-weight="700">TIDEWAKE</text>
+    <text x="62" y="151" font-size="26">SIGNS + DELIVERS</text>
+    <text x="838" y="118" text-anchor="end" font-size="32" font-weight="700">IRONHOLD</text>
+    <text x="838" y="151" text-anchor="end" font-size="26">VERIFIES + STORES</text>
+    <text x="450" y="94" text-anchor="middle" font-size="26" font-weight="700">SIGNED WEBHOOK</text>
+  </g>
+
+  <rect x="324" y="112" width="236" height="2" fill="#A29E92"/>
+  <path d="M544 96l16 16-16 16z" fill="#E8604F"/>
+</svg>

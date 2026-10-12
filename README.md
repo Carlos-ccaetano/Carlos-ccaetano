@@ -1,18 +1,31 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img src="./assets/hero-light.svg" width="100%" alt="Editorial profile header for Carlos Caetano, Software Engineer in Belo Horizonte, focused on backend systems, distributed systems, and application security">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-manual-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-manual-light.svg">
+  <img src="./assets/hero-manual-light.svg" width="100%" alt="Systems reference manual header for Carlos Caetano, a Software Engineer in Belo Horizonte working across backend systems, distributed systems, payments, and application security">
 </picture>
+
+# Carlos Caetano
+
+**Software Engineer** · Belo Horizonte, Brazil<br>
+`BACKEND / DISTRIBUTED SYSTEMS / PAYMENTS / APPLICATION SECURITY`
+
+---
 
 ## 01 / ABOUT
 
-I'm a software engineer at **ATTRUS**, with professional experience in payments and backend development. I primarily work with **Elixir, Phoenix, and PostgreSQL**, building services where reliable processing and clear failure handling matter.
+I'm a software engineer at **ATTRUS**, working across payments and backend development with **Elixir, Phoenix, and PostgreSQL**.
 
-My technical interests center on distributed systems reliability, backend architecture, secure API design, and applied AI for cybersecurity.
+My interests are distributed systems reliability, backend architecture, secure API design, and applied AI for cybersecurity. I prefer systems that make their failure modes visible.
 
 ---
 
 ## 02 / SELECTED WORK
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-tidewake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/glyph-tidewake-light.svg">
+  <img src="./assets/glyph-tidewake-light.svg" width="48" alt="Tidewake glyph: durable event cells feeding outbound delivery lines">
+</picture>
 
 ### Tidewake
 
@@ -24,6 +37,12 @@ A webhook delivery service designed around durable ingestion and recoverable bac
 - Signs exact payload bytes with HMAC-SHA256 and records each delivery attempt.
 - Recovers stale work and rejects unsafe resolved destinations before delivery.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-ironhold-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/glyph-ironhold-light.svg">
+  <img src="./assets/glyph-ironhold-light.svg" width="48" alt="Ironhold glyph: a closed pixel seal containing a verification mark">
+</picture>
+
 ### Ironhold
 
 `WEBHOOK RECEIVER / ELIXIR / SECURITY`
@@ -34,23 +53,43 @@ A companion receiver that verifies webhook authenticity before accepting and per
 - Checks event identity across headers and payload before accepting the request.
 - Stores accepted events under a unique event ID with explicit duplicate and validation responses.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/figure-delivery-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/figure-delivery-light.svg">
+  <img src="./assets/figure-delivery-light.svg" width="100%" alt="Figure 1: Tidewake signs and delivers a webhook; Ironhold verifies the signature and stores the accepted event">
+</picture>
+
+*Figure 1 — Tidewake signs and delivers the webhook; Ironhold verifies the signature and stores the accepted event.*
+
 The source repositories are currently private. Both projects are early-stage engineering studies; retry policies, broader replay controls, secret rotation, and production operations remain roadmap work.
 
 ---
 
 ## 03 / TOOLKIT
 
-`CORE`<br>
-Elixir / Erlang/OTP / Phoenix / PostgreSQL / Oban
+```text
+CORE
+Elixir · Erlang/OTP · Phoenix
+PostgreSQL · Oban
 
-`SYSTEMS & DELIVERY`<br>
-Docker / RabbitMQ / GitHub Actions / Linux / AWS
+SYSTEMS
+Docker · RabbitMQ · Linux
+GitHub Actions · AWS
 
-`PRODUCT DEVELOPMENT`<br>
-TypeScript / React / Vue
+PRODUCT
+TypeScript · React · Vue
+```
 
 ---
 
 ## 04 / CONTACT
 
-[GitHub](https://github.com/Carlos-ccaetano) / [LinkedIn](https://www.linkedin.com/in/carlos-caetano)
+[GitHub](https://github.com/Carlos-ccaetano) · [LinkedIn](https://www.linkedin.com/in/carlos-caetano)
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/colophon-manual-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/colophon-manual-light.svg">
+  <img src="./assets/colophon-manual-light.svg" width="100%" alt="Colophon: local SVG, system fonts, twelve-column grid, and no external requests">
+</picture>
+
+*Colophon — Local SVG, system fonts, a twelve-column grid, and no external requests.*

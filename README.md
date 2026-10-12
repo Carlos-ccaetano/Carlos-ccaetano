@@ -1,222 +1,89 @@
-# Carlos Caetano
+<p align="center">
+  <img src="./assets/profile-banner.jpg" width="100%" alt="Abstract network of events converging on a protected service" />
+</p>
 
-<div align="center">
+<h1 align="center">Carlos Caetano</h1>
 
-### Software Developer · Backend Engineering · Application Security
+<p align="center">
+  <strong>Backend engineering · distributed systems · application security</strong>
+</p>
 
-Building reliable backend systems, secure APIs and distributed applications.
+<p align="center">
+  Building reliable services for the places where asynchronous work, external integrations, and security boundaries meet.
+</p>
 
-<br>
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square\&logo=linkedin\&logoColor=white)](https://linkedin.com/in/carlos-caetano)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square\&logo=github\&logoColor=white)](https://github.com/Carlos-ccaetano)
-
-</div>
+<p align="center">
+  <a href="https://github.com/Carlos-ccaetano">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/carlos-caetano">LinkedIn</a>
+</p>
 
 ---
 
 ## About
 
-I'm a **Software Developer Intern at ATTRUS**, working primarily with **Elixir, Phoenix and PostgreSQL** on backend systems for financial and payment products.
+I work in software engineering at **ATTRUS**, contributing to backend systems in a financial-technology environment. My focus is Elixir/Phoenix services, asynchronous processing, and APIs designed around explicit failure and security boundaries.
 
-I'm also pursuing a **Bachelor's degree in Computer Science**, with interests spanning **software engineering, distributed systems and application security**.
+I'm completing a bachelor's degree in Computer Science at **Faculdade Dom Helder Câmara**. Outside work, I build focused projects that turn reliability and security concepts into code I can test, inspect, and improve.
 
-My long-term focus is becoming an engineer capable of understanding systems beyond individual features — from architecture and reliability to API security, threat modeling and secure software design.
+## Featured engineering projects
 
-```text
-Backend Engineering  →  Distributed Systems  →  Application Security
-```
+### [Tidewake](https://github.com/Carlos-ccaetano/Tidewake)
 
-> I value simple implementations, clear abstractions, maintainable systems and security by design.
+An early-stage webhook delivery service exploring durable ingestion and recoverable asynchronous processing.
 
----
+- Built with Elixir, Phoenix, Ecto, PostgreSQL, and Oban.
+- Creates the event, delivery records, and initial background jobs in one database transaction.
+- Tracks delivery attempts, signs exact payload bytes with HMAC-SHA256, recovers stale work, and emits Telemetry events.
+- Validates outbound targets and rejects unsafe resolved addresses before delivery.
 
-## Current Focus
+**Current boundary:** at-least-once recovery is implemented; automated retry/backoff policies and production operations remain roadmap work.
 
-* Backend development with **Elixir & Phoenix**
-* REST API design and integration
-* PostgreSQL and data modeling
-* Asynchronous processing and background jobs
-* Webhooks and distributed systems
-* Secure API development
-* OWASP Top 10 and application security
-* Linux, Docker and cloud infrastructure
-* Software architecture fundamentals
+### [Ironhold](https://github.com/Carlos-ccaetano/Ironhold)
 
----
+A companion receiver focused on authenticated webhook ingestion and conservative request handling.
 
-## Tech Stack
+- Verifies HMAC-SHA256 signatures against the exact raw request body within a bounded timestamp window.
+- Checks event identity across headers and payload before accepting the request.
+- Persists accepted events under a unique event ID and returns explicit duplicate or validation responses.
+- Emits low-cardinality Telemetry signals for authentication and ingestion paths.
 
-### Languages
+**Current boundary:** broader replay controls, secret rotation, rate limiting, and operational tooling remain roadmap work.
 
-![Elixir](https://img.shields.io/badge/Elixir-4B275F?style=flat-square\&logo=elixir\&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square\&logo=python\&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square\&logo=openjdk\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square\&logo=javascript\&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square\&logo=typescript\&logoColor=white)
+Together, the repositories document and exercise this local flow:
 
-### Backend
+> **Event → Tidewake → signed webhook → Ironhold**
 
-![Phoenix](https://img.shields.io/badge/Phoenix-EF5B25?style=flat-square\&logo=phoenixframework\&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square\&logo=nodedotjs\&logoColor=white)
-![REST](https://img.shields.io/badge/REST_APIs-005571?style=flat-square)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square\&logo=postgresql\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square\&logo=mysql\&logoColor=white)
+They remain independent, early-stage services rather than a production deployment.
 
-### Frontend
+## Toolkit
 
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square\&logo=vuedotjs\&logoColor=white)
+- **Core backend:** Elixir · Erlang/OTP · Phoenix · Ecto · PostgreSQL · Oban
+- **Infrastructure and delivery:** Docker · RabbitMQ · Linux · GitHub Actions
+- **Additional experience:** TypeScript · React · Vue.js · AWS integrations, including Cognito
 
-### Infrastructure
+## Engineering interests
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square\&logo=linux\&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square\&logo=docker\&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square\&logo=amazonaws\&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square\&logo=git\&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square\&logo=githubactions\&logoColor=white)
+- Distributed systems reliability and recoverable asynchronous work
+- Secure API and integration-boundary design
+- Application security, threat modeling, and defensive review
+- AI-assisted security analysis and anomaly detection
 
-### Security
+## Education and credentials
 
-![OWASP](https://img.shields.io/badge/OWASP_Top_10-000000?style=flat-square\&logo=owasp\&logoColor=white)
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square\&logo=kalilinux\&logoColor=white)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square\&logo=wireshark\&logoColor=white)
+**Bachelor's degree in Computer Science** — Faculdade Dom Helder Câmara
 
-`Secure Coding` · `API Security` · `Authentication` · `Authorization` · `Threat Modeling`
+- GitHub Actions (GH-200)
+- API Red Team Analyst (API-RTA)
+- Google Cybersecurity Professional Certificate
+- Ethical Hacker — IBSEC
+- Linux Security — IBSEC
+
+## Connect
+
+[GitHub](https://github.com/Carlos-ccaetano) · [LinkedIn](https://www.linkedin.com/in/carlos-caetano)
 
 ---
 
-## Featured Projects
-
-### 🌊 Tidewake
-
-**Webhook delivery infrastructure built with Elixir and Phoenix.**
-
-A backend-focused project designed to explore concepts commonly found in production event-delivery platforms.
-
-**Engineering topics**
-
-* Event ingestion
-* Asynchronous webhook delivery
-* Retry strategies and exponential backoff
-* Idempotency
-* HMAC signatures
-* Delivery auditing
-* Failure handling
-* PostgreSQL persistence
-* Background processing
-* Observability
-
-**Stack**
-
-`Elixir` · `Phoenix` · `PostgreSQL` · `Oban` · `Docker` · `AWS`
-
----
-
-### 🛡️ Ironhold
-
-**Secure webhook receiver and validation service.**
-
-Designed as the receiving side of Tidewake, with emphasis on **application security and trustworthy event processing**.
-
-**Security topics**
-
-* HMAC verification
-* Timestamp validation
-* Replay attack prevention
-* Request validation
-* Controlled error handling
-* Security logging
-* Audit trails
-
-**Stack**
-
-`Elixir` · `Phoenix` · `PostgreSQL` · `Application Security`
-
----
-
-### 🤖 ATOM
-
-**Academic robotics and computer vision research.**
-
-Research project exploring machine learning and computer vision applied to robotic control systems.
-
-**Topics**
-
-`Python` · `OpenCV` · `Computer Vision` · `Machine Learning` · `Robotics`
-
----
-
-## Experience
-
-| Period         | Role                        | Organization        |
-| -------------- | --------------------------- | ------------------- |
-| 2026 — Present | Software Developer Intern   | **ATTRUS**          |
-| 2025           | Infrastructure & VDI Intern | **TRIPLA**          |
-| 2023 — 2024    | Officer Candidate           | **Brazilian Army**  |
-| 2021 — 2022    | Systems Developer Assistant | **JFA Eletrônicos** |
-
----
-
-## Education
-
-### Computer Science
-
-**Bachelor's Degree — 2023 → 2027**
-
-Areas of interest:
-
-* Software Engineering
-* Distributed Systems
-* Computer Networks
-* Cybersecurity
-* Application Security
-* Software Architecture
-
----
-
-## Certifications & Training
-
-* **API Red Team Analyst — CyberWarFare Labs**
-* **Google Cybersecurity Professional Certificate**
-* **Ethical Hacking — IBSEC**
-* **Linux Security — IBSEC**
-* **Cisco Network Technician**
-* **CS50's Introduction to Cybersecurity — HarvardX**
-
----
-
-## GitHub
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Carlos-ccaetano&show_icons=true&hide_border=true&theme=github_dark&rank_icon=github" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Carlos-ccaetano&layout=compact&hide_border=true&theme=github_dark" />
-
-</div>
-
----
-
-## Engineering Direction
-
-```text
-Software Engineering
-       │
-       ├── Backend Engineering
-       │     ├── APIs
-       │     ├── Distributed Systems
-       │     ├── Databases
-       │     └── Cloud Infrastructure
-       │
-       └── Application Security
-             ├── Secure Design
-             ├── Secure Code Review
-             ├── API Security
-             └── Threat Modeling
-```
-
-<div align="center">
-
-**Build reliable systems. Understand how they fail. Design them to fail safely.**
-
-</div>
+<p align="center">
+  <strong>Build reliable systems. Understand how they fail. Design them to fail safely.</strong>
+</p>

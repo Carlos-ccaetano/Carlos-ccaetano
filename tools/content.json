@@ -1,24 +1,22 @@
 {
   "name": "CARLOS CAETANO",
-  "role": "Backend Developer · Payments",
-  "about": "I'm a backend developer working on payments in Elixir. I study API security too, mostly because breaking things teaches you how to build them better. When I'm away from the keyboard I'm usually on a trail, on a climbing wall, or practicing the saxophone (not well, but regularly).",
+  "role": "Software Engineer · Backend & Payments",
+  "about": "I’m a backend developer working on payments in Elixir. I study API security too, mostly because breaking things teaches you how to build them better. When I’m away from the keyboard I’m usually on a trail, on a climbing wall, or practicing the saxophone (not well, but regularly).",
   "stack": [
     "Elixir",
     "Phoenix",
-    "Ecto",
-    "Oban",
     "PostgreSQL",
-    "Docker",
     "AWS",
+    "Docker",
+    "Java",
+    "Spring Boot",
     "GitHub Actions",
-    "Python",
-    "Java"
+    "Linux",
+    "Python"
   ],
   "certifications": [
-    "Certified API Red Team Analyst (API-RTA) · CyberWarFare Labs"
+    "API-RTA · CyberWarFare Labs",
+    "AWS Solutions Architect – Associate · in progress"
   ],
-  "githubUrl": "https://github.com/Carlos-ccaetano",
-  "bio": "Elixir Backend Developer, API Security Student, Trail Runner and Ranger in Training",
-  "location": "Belo Horizonte, Brazil",
-  "alt": "Profile card for CARLOS CAETANO, Backend Developer · Payments. I'm a backend developer working on payments in Elixir. I study API security too, mostly because breaking things teaches you how to build them better. When I'm away from the keyboard I'm usually on a trail, on a climbing wall, or practicing the saxophone (not well, but regularly). Stack: Elixir, Phoenix, Ecto, Oban, PostgreSQL, Docker, AWS, GitHub Actions, Python, Java. Certifications: Certified API Red Team Analyst (API-RTA) · CyberWarFare Labs."
+  "alt": "Profile card for CARLOS CAETANO, Software Engineer · Backend & Payments. Stack: Elixir, Phoenix, PostgreSQL, AWS, Docker, Java, Spring Boot, GitHub Actions, Linux, Python. Certifications: API-RTA · CyberWarFare Labs; AWS Solutions Architect – Associate · in progress."
 }

@@ -1,9 +1,6 @@
 node_modules/
 tools/preview/
 tools/reference/
-tools/avatar-source.*
-tools/original-photo.*
-assets/avatar/avatar-preview.png
 
 .env
 .env.*

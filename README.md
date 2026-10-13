@@ -1,95 +1,41 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-manual-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-manual-light.svg">
-  <img src="./assets/hero-manual-light.svg" width="100%" alt="Systems reference manual header for Carlos Caetano, a Software Engineer in Belo Horizonte working across backend systems, distributed systems, payments, and application security">
-</picture>
+<img alt="Profile card for CARLOS CAETANO, Backend Developer · Payments. I'm a backend developer working on payments in Elixir. I study API security too, mostly because breaking things teaches you how to build them better. When I'm away from the keyboard I'm usually on a trail, on a climbing wall, or practicing the saxophone (not well, but regularly). Stack: Elixir, Phoenix, Ecto, Oban, PostgreSQL, Docker, AWS, GitHub Actions, Python, Java. Certifications: Certified API Red Team Analyst (API-RTA) · CyberWarFare Labs." src="assets/hero.svg" width="100%">
 
-# Carlos Caetano
+[GitHub](https://github.com/Carlos-ccaetano)
 
-**Software Engineer** · Belo Horizonte, Brazil<br>
-`BACKEND / DISTRIBUTED SYSTEMS / PAYMENTS / APPLICATION SECURITY`
+<details><summary>Read as text</summary>
 
----
+I'm a backend developer working on payments in Elixir. I study API security too, mostly because breaking things teaches you how to build them better. When I'm away from the keyboard I'm usually on a trail, on a climbing wall, or practicing the saxophone (not well, but regularly).
 
-## 01 / ABOUT
+STACK: Elixir, Phoenix, Ecto, Oban, PostgreSQL, Docker, AWS, GitHub Actions, Python, Java
 
-I'm a software engineer at **ATTRUS**, working across payments and backend development with **Elixir, Phoenix, and PostgreSQL**.
+CERTIFICATIONS: Certified API Red Team Analyst (API-RTA) · CyberWarFare Labs
 
-My interests are distributed systems reliability, backend architecture, secure API design, and applied AI for cybersecurity. I prefer systems that make their failure modes visible.
+</details>
 
----
+## 01 / SELECTED WORK
 
-## 02 / SELECTED WORK
+One system, two focused components: Tidewake handles delivery; Ironhold handles receiving and verification.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-tidewake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/glyph-tidewake-light.svg">
-  <img src="./assets/glyph-tidewake-light.svg" width="48" alt="Tidewake glyph: durable event cells feeding outbound delivery lines">
-</picture>
+### [Tidewake](https://github.com/Carlos-ccaetano/Tidewake)
 
-### Tidewake
+`WEBHOOK DELIVERY · ELIXIR · PHOENIX · PUBLIC · EARLY`
 
-`WEBHOOK DELIVERY / ELIXIR / PHOENIX`
+A webhook delivery service built around durable ingestion and recoverable background work.
 
-A webhook delivery service designed around durable ingestion and recoverable background work.
-
-- Creates events, delivery records, and initial Oban jobs in one database transaction.
+- Persists events, delivery records, and the initial Oban job in one database transaction.
 - Signs exact payload bytes with HMAC-SHA256 and records each delivery attempt.
 - Recovers stale work and rejects unsafe resolved destinations before delivery.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/glyph-ironhold-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/glyph-ironhold-light.svg">
-  <img src="./assets/glyph-ironhold-light.svg" width="48" alt="Ironhold glyph: a closed pixel seal containing a verification mark">
-</picture>
+**NOT YET:** Mature retry policies, secret rotation, or production operations.
 
-### Ironhold
+### [Ironhold](https://github.com/Carlos-ccaetano/Ironhold)
 
-`WEBHOOK RECEIVER / ELIXIR / SECURITY`
+`WEBHOOK RECEIVER · ELIXIR · SECURITY · PUBLIC · EARLY`
 
-A companion receiver that verifies webhook authenticity before accepting and persisting an event.
+The companion receiver: it verifies webhook authenticity before accepting and persisting an event.
 
-- Verifies HMAC-SHA256 signatures against the exact raw request body within a bounded timestamp window.
-- Checks event identity across headers and payload before accepting the request.
-- Stores accepted events under a unique event ID with explicit duplicate and validation responses.
+- Verifies HMAC-SHA256 signatures against the exact request body within a bounded timestamp window.
+- Checks that header and payload event IDs agree before accepting the request.
+- Stores accepted events under a unique ID with explicit duplicate and validation responses.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/figure-delivery-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/figure-delivery-light.svg">
-  <img src="./assets/figure-delivery-light.svg" width="100%" alt="Figure 1: Tidewake signs and delivers a webhook; Ironhold verifies the signature and stores the accepted event">
-</picture>
-
-*Figure 1 — Tidewake signs and delivers the webhook; Ironhold verifies the signature and stores the accepted event.*
-
-The source repositories are currently private. Both projects are early-stage engineering studies; retry policies, broader replay controls, secret rotation, and production operations remain roadmap work.
-
----
-
-## 03 / TOOLKIT
-
-```text
-CORE
-Elixir · Erlang/OTP · Phoenix
-PostgreSQL · Oban
-
-SYSTEMS
-Docker · RabbitMQ · Linux
-GitHub Actions · AWS
-
-PRODUCT
-TypeScript · React · Vue
-```
-
----
-
-## 04 / CONTACT
-
-[GitHub](https://github.com/Carlos-ccaetano) · [LinkedIn](https://www.linkedin.com/in/carlos-caetano)
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/colophon-manual-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/colophon-manual-light.svg">
-  <img src="./assets/colophon-manual-light.svg" width="100%" alt="Colophon: local SVG, system fonts, twelve-column grid, and no external requests">
-</picture>
-
-*Colophon — Local SVG, system fonts, a twelve-column grid, and no external requests.*
+**NOT YET:** Broader replay controls, secret rotation, or production operations.

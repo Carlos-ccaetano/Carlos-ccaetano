@@ -1,8 +1,9 @@
 export const tokens = Object.freeze({
-  background: "#0d0d0d",
-  text: "#ece5d3",
-  muted: "#8c8672",
-  accent: "#e8553a",
+  background: "#161614",
+  panel: "#11110f",
+  text: "#e9e5d8",
+  muted: "#a29e92",
+  accent: "#e8604f",
 });
 
 function linearize(channel) {
